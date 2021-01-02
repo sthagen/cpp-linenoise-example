@@ -27,8 +27,8 @@ CPMAddPackage(
 )
 
 if(linenoise_ADDED)
-  add_library(linenoise ${linenoise_SOURCE_DIR}/linenoise.c)
-  target_include_directories(linenoise PUBLIC ${linenoise_SOURCE_DIR})
+  # add_library(linenoise ${linenoise_SOURCE_DIR}/linenoise.c)
+  target_include_directories(linenoise PUBLIC ${linenoise_SOURCE_DIR}/include)
 endif()
 
 # ---- Create binary ----
